@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <hr />
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Rakuten Coding Test</h1>
+                <h4>Slawa Gurevich</h4>
+                <p>The form can be used to retrieve data from the <b>楽天ブックスDVD/Blu-ray検索API (BooksDVD/Search/)</b> API.</p>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+             <form id="form" class="col-sm-4">
+                <div class="form-group">
+                    <label for="form-title">Title</label>
+                    <input name="title" id="form-title" type="text" class="form-control" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <label for="form-artist">Artist</label>
+                    <input name="artistName" id="form-artist" type="text" class="form-control" placeholder="Artist">
+                </div>
+                <div class="form-group">
+                    <label for="form-label">Label</label>
+                    <input name="label" id="form-label" type="text" class="form-control" placeholder="Label">
+                </div>
+                <div class="form-group">
+                    <label for="form-jan">JAN</label>
+                    <input name="jan" id="form-jan" type="text" class="form-control" placeholder="JAN">
+                </div>
+                <button id="submit" disabled type="submit" class="btn btn-primary">Load Data</button>
+            </form>
+            <div class="col-sm-8">
+                <div id="slider">
+                    <div class="no-data">
+                        There is no data. Please use the form on the left.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app/js/scripts.js"></script>
+</html>
